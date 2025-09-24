@@ -1,0 +1,9 @@
+path: datasets
+train: images/train
+val: images/val
+names:
+  0: Offline Instrument
+  1: 2way Valve No Pattern
+  2: 2way Gate Valve
+  3: Check Valve
+  4: Offline Instrument NL
