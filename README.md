@@ -240,14 +240,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions, issues, or feature requests, please:
 1. Check the [Issues](https://github.com/yourusername/pid-pdf-processor/issues) page
 2. Create a new issue with detailed information
-3. Contact: your.email@example.com
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with basic P&ID detection
-- **v1.1.0** - Added multiple OCR engine support
-- **v1.2.0** - Enhanced GUI and error handling
-- **v1.3.0** - Improved YOLO model training pipeline
+3. Contact: rhrj@ramboll.com
 
 ## 🚀 Roadmap
 
@@ -257,7 +250,7 @@ For questions, issues, or feature requests, please:
 - [ ] Real-time processing capabilities
 - [ ] Web-based interface option
 - [ ] Docker containerization
-- [ ] Cloud deployment options
+- [] Cloud deployment options
 
 ---
 
