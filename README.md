@@ -238,7 +238,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For questions, issues, or feature requests, please:
-1. Check the [Issues](https://github.com/yourusername/pid-pdf-processor/issues) page
+1. Check the [Issues](https://github.com/RahulRaj-DDC/PidDetector/issues) page
 2. Create a new issue with detailed information
 3. Contact: rhrj@ramboll.com
 
