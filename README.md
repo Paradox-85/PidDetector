@@ -250,7 +250,7 @@ For questions, issues, or feature requests, please:
 - [ ] Real-time processing capabilities
 - [ ] Web-based interface option
 - [ ] Docker containerization
-- [] Cloud deployment options
+- [ ] Cloud deployment options
 
 ---
 
