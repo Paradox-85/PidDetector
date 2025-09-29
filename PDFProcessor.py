@@ -3,7 +3,14 @@ import os.path
 from matplotlib import patches
 from ultralytics import YOLO
 
-
+def format_label(texts):
+    if not texts:
+        return "N/A"
+    
+    if len(texts) == 3:
+        return f"{texts[0]}{texts[1]}-{texts[2]}"
+    else:
+        return "-".join(texts)
 
 def get_resource_path(relative_path):
     """Get absolute path to resource, works for dev and for PyInstaller"""
@@ -336,7 +343,8 @@ def get_data_from_pdf(pdf_path: str, progress_callback,
                         if 'text' in item and item['text'].strip():
                             texts.append(item['text'].strip())
 
-                final_label = " - ".join(texts) if texts else "N/A"
+                # generate final tag name
+                final_label = format_label(texts)
 
             except Exception as e:
                 print(f"OCR processing error on box {i}: {e}")
@@ -511,7 +519,7 @@ def get_data_from_pdf_memory(pdf_path: str, progress_callback,
                         if 'text' in item and item['text'].strip():
                             texts.append(item['text'].strip())
 
-                final_label = " - ".join(texts) if texts else "N/A"
+                final_label = format_label(texts)
 
             except Exception as e:
                 print(f"OCR processing error on box {i}: {e}")
@@ -616,7 +624,7 @@ def get_data_from_pdf_easyocr(pdf_path: str, progress_callback,
                     if confidence > 0.5 and text.strip():  # Filter by confidence
                         texts.append(text.strip())
 
-                final_label = " - ".join(texts) if texts else "N/A"
+                final_label = format_label(texts)
 
             except Exception as e:
                 print(f"EasyOCR processing error on box {i}: {e}")
